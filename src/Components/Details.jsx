@@ -12,13 +12,13 @@ const Details = (props) => {
   return (
     <div className='details'>
         <h1 className='details-title'>{props.title}</h1>
-        <img src={props.src} alt='movie picture/poster'/>
+        <img  className='details-picture' src={props.src} alt='movie picture/poster'/>
         <div className='details-trailer'>
             <YouTube videoId={props.videoId} opts={opts}/>
         </div>
-        <p className='details-summary'>{props.summary}</p>
-        <p className='details-revenue'>{props.revenue}</p>
-        <p className='details-year'>{props.year}</p>
+        <p className='details-summary'>Detailed Description: {props.summary}</p>
+        <p className='details-revenue'> Box Office Revenue: {props.revenue}</p>
+        <p className='details-year'>Debut: {props.year}</p>
     </div>
   )
 }

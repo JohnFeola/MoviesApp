@@ -6,3 +6,9 @@
     justify-content: center;
     justify-items: center;
 }
+
+
+.details-picture{
+    height: 250px;
+    margin-bottom: 16px;
+}
