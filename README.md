@@ -1,3 +1,15 @@
+DESCRIPTION:
+Website displays a small selection of movies
+
+home screen is simply a bunch of movies
+
+navbar is simple navBar with a home and Contact Us menu
+
+upon clicking a movie component, user is taken to another screen which displays an entire page about that movie -> year it came out, summary, IMDb rating (via API!?), a bigger picture, and a link to the trailer
+
+Using Storybook for most/all components
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
