@@ -13,7 +13,7 @@ function App() {
         <Navbar/>
           <Routes>
             <Route path='/' element={<Home/>}/>
-              <Route path='/movie/:id' element={<Details title="LOTR ROTK" src="https://image.tmdb.org/t/p/original/dNsEaafO4huvqzVrlPuSQWIHOy0.jpg" videoId="r5X-hFf6Bwo" revenue="$120,000,000" year="2008"/>}/>
+              <Route path='/movie/:id' element={<Details />}/>
               <Route path='/contactus' element={<Contactus  />}/>
             
           </Routes>

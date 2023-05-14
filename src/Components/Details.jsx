@@ -1,8 +1,12 @@
 import React from 'react'
 import YouTube from 'react-youtube';
-import './Details.css'
+import './Details.css';
+import { useParams } from 'react-router-dom';
+import { moviesData } from './moviesData';
 
-const Details = (props) => {
+const Details = () => {
+    const {id} = useParams();
+    const props = moviesData.find(movie => movie.id === parseInt(id)) //renamed movie-> props to avoid typing, movie is more logical
 
     const opts = {
         height: '390',
