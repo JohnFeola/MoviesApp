@@ -20,7 +20,7 @@ const MovieSearch = () => {
         }
     }
     //push breaks to an array so that scroll bar also appears in https://.../searchmovies
-    const numBr = 19;
+    const numBr = 25;
     const breaks = [];
     for(let i = 0; i < numBr; i++){
         breaks.push(<br/>);

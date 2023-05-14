@@ -8,7 +8,9 @@ const Navbar = (props) => {
     <nav className='navbar'>
         <div className='brand-container'>
             <div className='navbar-brand'>
+               <NavLink to='/' className='notnec'>
                 <img src='https://prodimages.everythingneon.com/large/n105-6797-blue-movies-neon-sign.jpg' alt='movie logo' className='logo'></img>
+                </NavLink>
             </div>
             <div className='navbar-name'>
                 {/* <h1>MoreMovies.com</h1> */}
