@@ -20,9 +20,13 @@ const Details = () => {
         <div className='details-trailer'>
             <YouTube videoId={props.videoId} opts={opts}/>
         </div>
-        <p className='details-summary'>Detailed Description: {props.summary}</p>
-        <p className='details-revenue'> Box Office Revenue: {props.revenue}</p>
-        <p className='details-year'>Debut: {props.year}</p>
+        <div className='details-extra'>
+          <h2>Details</h2>
+          <span className='details-sum'>Summary: </span>
+          <span className='details-summary'> {props.summary}</span><br/>
+          <p className='details-revenue'> Box Office Revenue: {props.revenue}</p>
+          <p className='details-year'>Debut: {props.year}</p>
+        </div>
     </div>
   )
 }

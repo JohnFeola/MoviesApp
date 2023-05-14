@@ -5,16 +5,17 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Details from './Components/Details'
 import Home from './Components/Home'
 import Contactus from './Components/Contactus';
+import MovieSearch from './Components/Search';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar/>
+        <Navbar firstLink='Home'/>
           <Routes>
             <Route path='/' element={<Home/>}/>
               <Route path='/movie/:id' element={<Details />}/>
-              <Route path='/contactus' element={<Contactus  />}/>
+              <Route path='/searchmovies' element={<MovieSearch/>}/>
             
           </Routes>
       </Router>

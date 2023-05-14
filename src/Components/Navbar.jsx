@@ -3,7 +3,7 @@ import './Navbar.css';
 import {NavLink} from 'react-router-dom';
 
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <nav className='navbar'>
         <div className='brand-container'>
@@ -16,10 +16,10 @@ const Navbar = () => {
         </div>
         <ul className='navbar-links'>
             <li className='nav-item'>
-                <NavLink to='/' className='nav-link'>Movies</NavLink>
+                <NavLink to='/' className='nav-link'>{props.firstLink}</NavLink>
             </li>
             <li className='nav-item'>
-                <NavLink to='/contactus' className='nav-link' activeClassName="active" >Contact Us</NavLink>
+                <NavLink to='/searchmovies' className='nav-link' activeClassName="active" >Search Movies</NavLink>
             </li>
         </ul>
     </nav>
