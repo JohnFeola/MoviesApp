@@ -16,6 +16,10 @@
     justify-items: center;
 }
 
+/* .search-submit:hover{
+  background-color: ;
+} */
+
 
 .search-bar {
     display: flex;
@@ -46,13 +50,14 @@
     padding: 10px 20px;
     border: none;
     background: rgb(102, 196, 255);
-    color: white;
+    color: black;
     font-size: 16px;
     cursor: pointer;
     border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s ease;
   }
   
   .search-bar button:hover {
-    background: rgb(102, 196, 255);
+    background: rgb(55, 174, 249);
   }
   

@@ -32,11 +32,11 @@ const MovieSearch = () => {
               <form onSubmit={handleSubmit}>
                 <input 
                   type="text" 
-                  placeholder="Enter movie name" 
+                  placeholder="Enter movie name..." 
                   value={query} 
                   onChange={(e) => setQuery(e.target.value)}
                 />
-                <button type="submit">Search</button>
+                <button className='search-submit' type="submit">Search</button>
               </form>
               </div>
               
@@ -50,7 +50,8 @@ const MovieSearch = () => {
                 ))}
              
                 <div className='breaks'>{breaks}</div>
-                <p>Voluptas quibusdam repudiandae voluptatem sunt. Ad dolorem laudantium dolor. Non accusantium aut voluptatem laborum commodi accusamus deserunt. Quo ut nam adipisci eius molestiae esse. Facere sint dolore veniam aut minus. Nostrum sed placeat est assumenda</p>
+                <p>Email: info@example.com Phone: +1-123-456-7890 Follow us on social media: Facebook: facebook.com/example Twitter: twitter.com/example
+Instagram: instagram.com/exampl. All rights reserved © 2023 Example Company.</p>
 
             </div>
     );

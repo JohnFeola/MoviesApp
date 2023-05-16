@@ -1,9 +1,12 @@
 import React from 'react';
 import './Navbar.css';
 import {NavLink} from 'react-router-dom';
+import {useSelector} from 'react-redux';
 
 
 const Navbar = (props) => {
+
+    const movieCount = useSelector(state => state.movie.movies.length);
   return (
     <nav className='navbar'>
         <div className='brand-container'>
@@ -24,8 +27,12 @@ const Navbar = (props) => {
                 <NavLink to='/searchmovies' className='nav-link' activeClassName="active" >Search Movies</NavLink>
             </li>
             <li className='nav-item'>
+                <NavLink to='/movielist' className='nav-link' activeClassName="active" >My List ({movieCount})</NavLink>
+            </li>
+            <li className='nav-item'>
                 <NavLink to='/contactus' className='nav-link' activeClassName="active" >Contact us</NavLink>
             </li>
+            
         </ul>
     </nav>
   )
