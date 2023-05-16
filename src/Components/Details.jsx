@@ -3,8 +3,11 @@ import YouTube from 'react-youtube';
 import './Details.css';
 import { useParams } from 'react-router-dom';
 import { moviesData } from './moviesData';
+import { useDispatch } from 'react-redux';
+import { addToList } from '../listSlice';
 
 const Details = () => {
+    const dispatch = useDispatch();
     const {id} = useParams();
     const props = moviesData.find(movie => movie.id === parseInt(id)) //renamed movie-> props to avoid typing, movie is more logical
 
@@ -12,6 +15,11 @@ const Details = () => {
         height: '390',
         width: '640',
       };
+
+
+    const handleAdd = () =>{
+      dispatch(addToList(props));
+    }
 
   return (
     <div className='details'>
@@ -27,6 +35,7 @@ const Details = () => {
           <p className='details-revenue'> Box Office Revenue: {props.revenue}</p>
           <p className='details-year'>Debut: {props.year}</p>
         </div>
+        <button onClick={handleAdd} className='details-button'>Add to my list</button>
     </div>
   )
 }

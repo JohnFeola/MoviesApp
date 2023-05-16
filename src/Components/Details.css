@@ -24,6 +24,7 @@
     border-radius: 15px;
     font-weight: 500;
     margin-top: 26px;
+    margin-bottom: 26px;
 }
 
 .details-summary{
@@ -42,4 +43,9 @@
 
 .details-sum{
     font-weight: bolder;
+}
+
+.details-button{
+    padding: 5px;
+    margin: 5px;
 }
