@@ -23,6 +23,9 @@ const Navbar = (props) => {
             <li className='nav-item'>
                 <NavLink to='/searchmovies' className='nav-link' activeClassName="active" >Search Movies</NavLink>
             </li>
+            <li className='nav-item'>
+                <NavLink to='/contactus' className='nav-link' activeClassName="active" >Contact us</NavLink>
+            </li>
         </ul>
     </nav>
   )

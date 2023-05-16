@@ -16,7 +16,7 @@ const Details = () => {
   return (
     <div className='details'>
         <h1 className='details-title'>{props.title}</h1>
-        <img  className='details-picture' src={props.src} alt='movie picture/poster'/>
+        <img  className='details-picture' src={props.src} alt='movie poster'/>
         <div className='details-trailer'>
             <YouTube videoId={props.videoId} opts={opts}/>
         </div>
