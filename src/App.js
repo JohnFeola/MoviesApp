@@ -9,6 +9,7 @@ import MovieSearch from './Components/Search';
 import {Provider} from 'react-redux'
 import store from './store2';
 import MovieList from './Components/MovieList';
+import SignInSide from './Components/SignInSide';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Route path='/searchmovies' element={<MovieSearch/>}/>
               <Route path='/movielist' element={<MovieList/>}/>
               <Route path='/contactus' element={<Contactus/>}/>
+              <Route path='/signin' element={<SignInSide />}/>
           </Routes>
       </Router>
     </div>

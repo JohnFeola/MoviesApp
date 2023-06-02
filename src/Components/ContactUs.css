@@ -12,6 +12,25 @@
     padding: 10px;
 }
 
+.contact-team{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 550px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.contact-meet{
+    margin-top: 16px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+
+
 .contact{
     background-color: rgb(190, 222, 242);
     display: flex;
@@ -28,4 +47,15 @@
     border-radius: 10px;
     width: 850px;
     padding: 10px;
+    background-color: white;
+}
+
+
+.contact-component{
+    background-color: white;
+}
+
+
+.contact-meet{
+    background-color: white;
 }

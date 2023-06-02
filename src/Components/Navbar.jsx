@@ -30,9 +30,11 @@ const Navbar = (props) => {
                 <NavLink to='/movielist' className='nav-link' activeClassName="active" >My List ({movieCount})</NavLink>
             </li>
             <li className='nav-item'>
-                <NavLink to='/contactus' className='nav-link' activeClassName="active" >Contact us</NavLink>
+                <NavLink to='/contactus' className='nav-link' activeClassName="active" >FAQ</NavLink>
             </li>
-            
+            <li className='nav-item'>
+                <NavLink to='/signin' className='nav-link' activeClassName="active" >Sign In</NavLink>
+            </li>
         </ul>
     </nav>
   )
